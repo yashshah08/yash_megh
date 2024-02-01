@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{ 
+    max-width: 1140px; margin: 0 auto; width: 100%;
+}
+.banner{
+    width:100%;
+    background-color: #000000;
+    position: relative;
+    color: white;
+    min-height: 150px;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1{
+    padding: 25px;
+    line-height: 1;
+}
+
+.quote1{
+    margin-top: 50px;
+}
+
+.quote1 p{
+    border-left: 5px solid rgba(0,0,0,.05);;
+    padding:20px ;
+    font-size: 18px;
+    font-style: italic;
+    color:#7a7a7a;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.products_content{
+    display: flex;
+    align-items:center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.products_text{
+    font-size: 16px;
+    color:#7a7a7a;
+    width: 50%;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 10px;
+}
+.products_text ul li{
+    padding-right: 50px;
+}
+
+.products_img{
+    width:50%;
+}
+.products_img img{
+    width: 100%;
+
+}
+
+.slider-frame{
+    padding-top: 30px;
+}
+.slider-frame img{
+    width: 350px;
+    object-fit: contain;
+    padding: 5px;
+    height: 260px;
+}
+
+.bannerSlider .slick-prev::before {
+    content: '←';
+    color: #64c1ff;
+    
+}
+
+.bannerSlider .slick-next::before {
+    content: '→';
+    color: #64c1ff;
+
+}
+
+.information{
+    padding: 35px 100px 35px 0px;
+    line-height: 30px;
+    color:#7a7a7a;
+    font-size: 16px;
+}
+
+.tabs{
+    border:rgba(94,190,255,0.51) 8px solid;
+    color: #7a7a7a;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: unset !important;
+    color: unset !important;
+}
+
+.industrial_product{
+    display: flex;
+    width: 100%;
+}
+
+.application{
+    width:33%;
+    padding: 20px 15px 0px 30px;
+}
+.application ul li{
+    padding-bottom: 10px;
+
+}
+.industrial_img {
+    width:33%;
+    
+}
+.industrial_img img {
+    object-fit: contain;
+    
+}
+.advantage{
+    width:33%;
+    padding: 20px 15px 0px 0px;
+}
+
+.advantage ul li{
+    padding-bottom: 10px;
+}
+
+.gas_cylinders{
+    display: flex;
+    width: 100%;
+}
+.gas_cylinder_text{
+    width: 50%;
+    padding: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.gas_cylinder_img{
+    width: 50%;
+}
+
+.gas_cylinder_img img{
+    object-fit:contain;
+}
+
+.protective_sleeves_tab{
+    padding: 20px;
+}
+.protective_sleeves_tab li{
+    padding: 10px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:60px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.contacts{
+    width:30%
+}
+
+.contact-class{
+    display: flex;
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+
+.contacts-text p{
+    color: #0c0c0c;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height:30px ;
+}
+
+.contacts-text a{
+    text-decoration: none;
+}
+
+.icon{
+    color:#0c0c0c;
+    line-height:40px ;
+    font-size: 20px;
+}
+
+
+.form{
+    width:70%;
+    padding-left: 220px;
+}
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group input {
+    width: 48%;
+    padding: 14px;
+    margin-bottom: 13px;
+    border:1px solid black;
+    font-weight: 700;
+  }
+
+  .subject{
+    width:100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border:1px solid black; font-weight: 700;
+  }
+  .message{
+    width: 100%;
+    padding: 10px;
+    border:1px solid black; 
+    height: 180px; 
+    font-weight: 700;
+  }
+
+  .btn{
+    text-align: center;
+    margin-top: 10px;
+  }
+  button{
+  background-color : #3db1ff ;
+  color : white ;
+  padding: 16px 32px; ;
+  border-radius : 5px ;
+  border : none ;
+  cursor : pointer ;
+  font-weight: 700; 
+  } 
+  
+  button:hover{
+  background-color :black ; 
+  color :white ; 
+  }
+  .cyto-map{
+    margin-top: 20px;
+  }
+  .cyto-map iframe{
+    width:100%;
+    height: 600px;
+  }
+  .coming_soon img{
+    padding: 60px;
+    max-width: 100%;
+}
+
+
+
+/* ipad pro  */
+@media only screen and (max-width: 1366px) {
+
+    .container{
+        padding: 15px 50px;
+    }
+
+    .slider-frame img{
+        width: 250px;
+        height: 200px;
+    }
+    
+    
+}
+
+
+/* / Ipad / */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 15px 45px;
+    }
+    .quote{
+        padding-top: 20px;
+    }
+    .quote1 {
+        margin-top: 15px;
+    }
+    .products_content {
+        margin-top: 10px;
+    }
+    .slider-frame {
+        padding: 0px 30px;
+    }
+    .slider-frame img{
+        width: 250px;
+        height: 200px;
+    }
+    .application {
+        width: 33%;
+        /* padding: 30px 0px 30px 10px; */
+    }
+    .industrial_img {
+        width: 33%;
+    }
+    .advantage {
+        width: 33%;
+        /* padding: 30px 30px 30px 0px; */
+    }
+    .gas_cylinder_text {
+        width: 50%;
+    }
+    .gas_cylinder_img {
+        width: 50%;
+    }
+    .cyto-map iframe{
+        width:100%;
+        height:300px;
+      }
+      .coming_soon img {
+        padding: 50px;
+    }
+
+    
+
+}
+
+
+/* / Iphone Xr / */
+@media only screen and (max-width: 991px) {
+    .container {
+        padding:10px 40px;
+    }
+    .products_content {
+        margin-bottom: 25px;
+    }
+    .products_text ul li {
+        padding-right: 10px;
+    }
+    .products_text {
+        width: 55%;
+    }
+    .products_img {
+        width: 45%;
+    } 
+
+    .slider-frame{
+        padding: 0px 20px;
+    }
+    .slider-frame img {
+        height: 200px;
+    }
+    .application {
+        width: 50%;
+    }
+    .industrial_img {
+        width: 0%;
+    }
+    .industrial_img img {
+        display: none;
+    }
+    .advantage {
+        width: 50%;
+    }
+    .gas_cylinder_text {
+        width: 100%;
+    }
+    .gas_cylinder_img {
+        width: 0%;
+    }
+    .gas_cylinder_img img{
+        display: none;
+    }
+    .contacts-text p {
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .details {
+        margin-top: 40px;
+    }
+
+    
+    
+}
+
+
+/* / Galaxy Tab S4 / */
+@media only screen and (max-width: 768px) {   
+    .container {
+        padding:10px 40px;
+    }
+    .quote1 p {
+        font-size: 17px;
+        line-height: 24px;
+        
+    }
+    .products_img {
+        width: 0;
+        display: none;
+    }
+    .products_text {  
+        width: 100%;
+        line-height: 24px;
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    .products_text ul li{
+        padding-bottom: 15px;
+    }
+    .slider-frame {
+        padding: 0px 20px;
+    }
+    .slider-frame img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .nav-item{
+        width: 33.3%;
+    }
+    .nav-tabs .nav-link {
+        --mdb-nav-tabs-link-padding-x: 18px !important;
+        }
+    
+    .application {
+        width: 50%;
+        font-size: 15px;
+    }
+    .industrial_img{
+        width: 0%;
+    }
+    .industrial_img img{
+        display: none;
+    }
+    .advantage {
+        width: 50%;
+        font-size: 15px;
+        
+    }
+    .gas_cylinder_text {
+        font-size: 15px;
+    }
+    .protective_sleeves_tab {
+        font-size: 15px;
+    }
+    .contacts{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .coming_soon img {
+        padding: 20px;
+    }
+}
+
+/* iphone se  */
+@media only screen and (max-width: 575px) {
+    .container {
+        padding:10px 30px;
+    }
+    .banner { 
+        min-height: 115px;
+
+    }
+    .banner h1 {
+        font-size: 25px;
+    }
+    .banner p {
+        font-size: 10px;
+    }
+    .quote1 p {
+        font-size: 15px;
+        line-height: 20px;
+        
+    }
+    .products_text {
+        font-size: 15px;
+        line-height: 20px;
+       
+    }
+    .products_text ul li{
+        padding-bottom: 10px;
+    }
+    .slider-frame {
+        padding: 20px 20px;
+    }
+    .slider-frame img{
+        height:150px;
+        width:100%;
+
+    }
+    .industrial_product {
+        flex-wrap: wrap;
+    }
+    .application {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 10px 0px 10px;
+        padding-bottom: 7px;
+    }
+     .application ul li {
+        padding-bottom: 7px;
+    } 
+    .industrial_img{
+        width: 0%;
+    }
+    .advantage {
+        width: 100%;
+        font-size: 14px;
+        /* line-height: 15px; */
+        padding: 10px 10px 0px 10px;
+
+    }
+    .advantage ul li {
+        padding-bottom: 7px;
+
+
+    }
+    .gas_cylinder_text {
+        font-size: 14px;
+        /* line-height: 15px; */
+        padding: 10px;
+    }
+    .protective_sleeves_tab {
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+    .protective_sleeves_tab ul li {
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+    .tabs ul li{
+        width: 100%;
+    }
+    .details {
+        margin-top: 25px;
+    }
+    .contacts-text p {
+        padding-left: 20px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .coming_soon img {
+        padding: 10px;
+    }
+}

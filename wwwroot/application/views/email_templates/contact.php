@@ -1,0 +1,82 @@
+<body style="font-family: arial; padding: 0px; margin: 0px;">
+    <div class="mailBlock" style="width: 600px; max-width: 100%; margin: 0 auto;">
+        <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="border: 1px solid #ccc;">
+            <tr>
+                <td valign="middle" height="184" style="background-color: #fff;" align="center" colspan="3">
+                    <table border="0" cellpadding="0" cellspacing="0" width="90%" class="tableGray" style="width: 90%;" align="center">
+                        <tr>
+                            <td>
+                                <img src="<?php echo site_url('assets/images/email_top.jpg');?>" style=" display: block; padding-left:20px;">
+                            </td>
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+            <tr>
+                <td height="40" colspan="3"></td>
+            </tr>
+            <tr>
+               <td width="30px" style="width:30px;"></td>  
+               <td align="center">
+               <table class="tableWhite padding100_40" style="width: 100%; background-color: #fff; font-family:'arial'; font-size:14px; line-height:18px;" align="center">
+                   
+                   <tr>
+                       <td colspan="2" height=10></td>
+                   </tr>
+                   <? foreach($_POST as $key => $value)
+                   {
+                       if(strpos($key,"_V")>0)
+                       {}
+                   else
+                   {
+                       $replace = $key."_V"; 
+                       $lastname=$_POST['txtlname'];
+                       if(isset($_POST[$replace])){
+                           ?>
+                           <tr>
+
+                               <td align=left  valign=top  width="175"><b><?=$_POST[$replace]?> :</b></td>
+                               <td align=left  valign=top>
+                                  
+                                   <?if(isset($_POST['txtname_V']) && $_POST[$replace] == 'Name')
+                                   {
+                                       echo ucwords($_POST['txtname']).' '.ucwords($lastname);
+                                   }                   
+                                   else if($value != "")
+                                   {
+                                       echo $value;
+                                   }
+                                   else
+                                   {
+                                       echo '--';
+                                   } ?>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td colspan="2" height=10></td>
+                           </tr>
+                           <?      }
+                       } 
+                   } ?>
+               </table>
+            </td>
+            <td width="30px" style="width:30px;"></td>  
+        </tr>        
+        
+        <tr>
+            <td height="40"></td>
+        </tr>
+        <tr>
+            <td valign="middle" height="75" style=" background-color: #212121;" align="center" colspan="3">
+                <table border="0" cellpadding="0" cellspacing="0" class="footer" style="width: 90%;" align="center">
+                    <tr>                          
+                        <td class="wid50" valign="middle">
+                            <p class="footerRight" style="text-align: center; font-family:Arial; color: #888888; font-size: 11px;">Copyright &copy; <?=date('Y')?> <?=$_POST['footer_V'];?></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
