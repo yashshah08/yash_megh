@@ -55,3 +55,17 @@
   <p> Home >> About </p>
 </div>
 <? } ?>
+
+<?if ($websitepagename== 'knitted_nets'){?>
+<div class="banner">
+        <h1>Knitted Nets</h1>
+        <p>Home >> Products-Sofpac >> Knitted Nets</p>
+    </div>
+    <? } ?>
+
+<?if ($websitepagename== 'square'){?>
+  <div class="banner">
+        <h1>Square </h1>
+        <p>Home >> Products-Square</p>
+    </div>
+    <? } ?>

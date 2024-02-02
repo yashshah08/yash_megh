@@ -9,7 +9,7 @@
   display: inline-block;
   padding: 0px;
   width: 45px;
-  height: 30px;
+  height: 25px;
   cursor: pointer;
   border: inherit;
 }
@@ -771,7 +771,7 @@ position: absolute; content: ""; height: 2px; background: #0088cc; width: 14%; b
     background-color: #000000;
     position: relative;
     color: white;
-    height: 100%; padding: 50px 0px; display: flex; justify-content: center; align-items: center; flex-direction: column;
+    height: 100%; padding: 40px 0px; display: flex; justify-content: center; align-items: center; flex-direction: column;
     align-items: center;
     text-align: center;
 }
@@ -783,7 +783,7 @@ position: absolute; content: ""; height: 2px; background: #0088cc; width: 14%; b
 }
 .banner p{ margin-bottom: 0px;font-size: 15px;}
 
-.product{ padding: 70px 0px;}
+.product{ padding: 50px 0px;}
 .product ul {
     display:flex;
     flex-wrap: wrap;
@@ -1022,7 +1022,7 @@ iframe{
     width:50%;
 }
 .products_img img{
-    width: 100%; display: flex; max-width: 60%; text-align: center; justify-content: center; margin: 0 auto;
+    width: 100%; display: flex; max-width: 100%; text-align: center; justify-content: center; margin: 0 auto;
 
 }
 
@@ -1072,10 +1072,10 @@ iframe{
 
 .nav-tabs .nav-link:hover {
     background-color: unset !important;
-    color: unset !important;
+    /* color: unset !important; */
 }
 .tabs .nav-tabs{ border-color: #3db1ff;  }
-.tabs .nav-tabs .nav-item .nav-link{ color: #0a0505; padding: 20px 25px; border-radius: 0px; border: none; }
+.tabs .nav-tabs .nav-item .nav-link{ color: #0c0202; padding: 20px 25px; border-radius: 0px; border: none; }
 
 .tabs .nav-tabs .nav-link.active , .tabs .nav-tabs .nav-item.show .nav-link{ border: none; color: #3db1ff;}
 .tabs .nav-tabs .nav-link.active , .tabs .nav-tabs .nav-link.active:hover { border: 1px solid #3db1ff; border-bottom: 0px; color: #3db1ff;}
@@ -1552,7 +1552,9 @@ iframe{
     }
     .products_content {
         margin-top: 10px;
+        flex-wrap: wrap;
     }
+        
     .slider-frame {
         padding: 0px 30px;
     }
@@ -1711,7 +1713,7 @@ iframe{
         width: 55%;
     }
     .products_img {
-        width: 45%;
+        width: 50%;
     } 
 
     .slider-frame{
@@ -1774,7 +1776,7 @@ iframe{
 /* / Galaxy Tab S4 / */
 @media only screen and (max-width: 768px) {
     .crossLine {
-        width: 10px;
+        /* width: 10px; */
         height: 25px;
     }
     .banner {
@@ -1794,7 +1796,8 @@ iframe{
         flex-wrap: wrap;
     }
     .info-box ul li{
-        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
         margin: 20px 0px; 
     }
     
@@ -1834,7 +1837,8 @@ iframe{
         padding-top: 30px;
     }
     .product ul li {
-        width: 47%;
+        flex: 0 0 50%;
+        max-width: 46%;
     }   
     .info-box ul li h2 {
         font-size: 30px;
@@ -1845,17 +1849,20 @@ iframe{
         
     }
     .products_img {
-        width: 0;
-        display: none;
+        width: 100%;
+        padding-top: 10px;
     }
     .products_text {  
         width: 100%;
+        max-width: 100%;
         line-height: 24px;
         font-size: 15px;
         margin-right: 0px;
     }
     .products_text ul li{
         padding-bottom: 15px;
+        padding-right: 0px;
+        margin-right: 0px;
     }
     .slider-frame {
         padding: 0px 20px;
@@ -1919,6 +1926,12 @@ iframe{
     .info {
         padding-top: 15px;
     }
+    .abt-us-tab .tabs .nav-tabs .nav-item .nav-link {
+        border-bottom: 1px gray solid;
+    }
+    .tabs .nav-tabs .nav-link.active, .tabs .nav-tabs .nav-link.active:hover {
+        border: 1px solid #3db1ff;
+    }
     .our_mission_img img {
         width: 40%;
         margin-top: 0px;
@@ -1951,6 +1964,9 @@ iframe{
         flex: 0 0 33.3%;
         max-width: 33.3%;
     }
+    .abt-us-tab .nav-item {
+        width: 100%;
+    }
 
     
 }
@@ -1958,7 +1974,10 @@ iframe{
 /* iphone se  */
 @media only screen and (max-width: 575px) {
     .banner {
-        padding: 20px 0px;
+        padding: 15px 0px;
+    }
+    .banner h2 {
+        padding-bottom: 10px;
     }
     .mainHeader {
         padding: 10px
@@ -2021,10 +2040,10 @@ iframe{
 
     .specific-req {
         margin-top: 0px;
-        height: 60px;
+        height: 70px;
     }
     .requirement {
-        padding: 0px ;
+        padding: 10px ;
     }
     .specific-req h2 {
         font-size: 20px;
@@ -2192,6 +2211,10 @@ iframe{
     .products_text ul li{
         padding-bottom: 10px;
     }
+    .information {
+        padding:  0px;
+        
+    }
     .slider-frame {
         padding: 20px 20px;
     }
@@ -2272,10 +2295,22 @@ iframe{
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .our_work_img img,.our_commitments_img img,.our_mission_img img {
+        display: none;
+    }
+    .our_work {
+        padding: 20px;
+    }
 
     .coming_soon img {
         padding: 10px;
     }
+    .product ul li {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px 0px;
+    }
+        
 
 
 }

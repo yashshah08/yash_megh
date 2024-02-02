@@ -20,5 +20,12 @@ class knitted extends Front_Controller
 		$this->load->vars($data);
 		$this->load->view('template/innermaster');
 	}
+	function knitted_nets()
+	{
+		$data['main'] = 'knitted_nets';
+		$data['websitepagename'] = 'knitted_nets';
+		$this->load->vars($data);
+		$this->load->view('template/innermaster');
+	}
 	
 }

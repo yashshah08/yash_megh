@@ -18,7 +18,7 @@
           <li <?if ($websitepagename== 'extruded_nets'){?> class="active" <? } ?>><a class="" href="<? echo site_url('diamond/extruded_nets');?>">Extruded Nets</a></li>
           <li <?if ($websitepagename== 'bud_caps'){?> class="active" <? } ?>><a class="" href="<? echo site_url('diamond/bud_caps');?>">Bud Cap</a></li>
           <li <?if ($websitepagename== 'bodyloofah'){?> class="active" <? } ?>><a class="" href="<? echo site_url('diamond/bodyloofah');?>">Body Loofah & Back Scrubers</a></li>
-          <li <?if ($websitepagename=='sofpac' ){?> class="active" <? } ?>><a class=" " href="<? echo site_url('Knitted/sofpac');?>">Knitted Nets</a> </li>
+          <li <?if ($websitepagename=='knitted_nets' ){?> class="active" <? } ?>><a class=" " href="<? echo site_url('Knitted/knitted_nets');?>">Knitted Nets</a> </li>
           
           <!-- <li><a href="#">Knitted Nets</a></li> -->
         </ul>

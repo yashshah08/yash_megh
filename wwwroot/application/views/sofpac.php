@@ -7,7 +7,7 @@
         </div>
         <p><b>Knitted Nets</b></p>
         <div class="readbtn">
-          <a><b>Read More</b></a>
+          <a href="<? echo site_url('Knitted/knitted_nets');?> " ><b>Read More</b></a>
         </div>
       </li>
 

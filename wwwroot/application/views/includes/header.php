@@ -40,7 +40,8 @@
                           <? } ?>><a class="dropdown-item" href="<? echo site_url('extruted/diamond');?>">Diamond</a>
                         </li>
                         
-                        <li><a class="dropdown-item" href="#">Square</a></li>
+                        <li>
+                          <a class="dropdown-item" href="<? echo site_url('extruded/square');?>">Square</a></li>
 
                       </ul>
                     </li>

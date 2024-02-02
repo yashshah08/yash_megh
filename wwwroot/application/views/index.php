@@ -105,11 +105,11 @@
         <li>
           <div class="wrapper">
 
-            <a href="#">
+            <a href="<? echo site_url('Knitted/knitted_nets');?>">
               <img src="<? echo site_url('assets/images/orange_net.png');?>" alt="net">
             </a>
             <div class="contentBox">
-              <a href="#" class="productTitle">Knitted Nets</a>
+              <a href="<? echo site_url('Knitted/knitted_nets');?>" class="productTitle">Knitted Nets</a>
             </div>
             <!-- <h1>Knitted Nets</h1> -->
           </div>
