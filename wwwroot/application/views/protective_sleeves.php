@@ -44,6 +44,7 @@
     </div>
   </div>
 </div>
+<div class="protective_tabs">
 <div class="container">
   <div class="tabs">
     <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
@@ -63,6 +64,7 @@
     <!-- Tabs navs -->
 
     <!-- Tabs content -->
+
     <div class="tab-content" id="ex1-content">
       <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
         <div class="industrial_product">
@@ -148,4 +150,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

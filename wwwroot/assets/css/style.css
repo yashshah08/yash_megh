@@ -1055,7 +1055,7 @@ iframe{
 
 
 .information{
-    padding: 35px 100px 35px 0px;
+    padding:  20px;
     line-height: 30px;
     color:#7a7a7a;
     font-size: 16px;
@@ -1872,8 +1872,10 @@ iframe{
         height: 200px;
     }
 
-    .nav-item{
-        width: 33.3%;
+    .protective_tabs .nav-item{
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
     }
     .nav-tabs .nav-link {
         --mdb-nav-tabs-link-padding-x: 18px !important;
@@ -1926,7 +1928,7 @@ iframe{
     .info {
         padding-top: 15px;
     }
-    .abt-us-tab .tabs .nav-tabs .nav-item .nav-link {
+    .tabs .nav-tabs .nav-item .nav-link {
         border-bottom: 1px gray solid;
     }
     .tabs .nav-tabs .nav-link.active, .tabs .nav-tabs .nav-link.active:hover {
@@ -2199,7 +2201,6 @@ iframe{
         font-size: 14px;
     }
     .quote1 p {
-        font-size: 15px;
         line-height: 20px;
         
     }
