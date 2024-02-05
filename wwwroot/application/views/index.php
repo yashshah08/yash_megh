@@ -11,7 +11,7 @@
         products that could have multiple applications covering various sectors and
         which could be accepted in domestic as well as international markets.
       </p>
-      <button><a href="#">Read More</a></button>
+      <a href="<? echo site_url('Aboutus');?> "><button>Read More</button></a>
     </div>
     <div class="about-img">
       <img src="<? echo site_url('assets/images/orange.png');?>" alt="">

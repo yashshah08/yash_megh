@@ -7,7 +7,7 @@
 <div class="footer">
   <div class="container">
     <div class="footer-content">
-      <div class="quick-links">
+      <div class="quick-links flex33">
         <h2>Quick Links</h2>
         <ul>
           
@@ -23,7 +23,7 @@
           <!-- <li><a href="#">Knitted Nets</a></li> -->
         </ul>
       </div>
-      <div class="contact-us">
+      <div class="contact-us flex33">
         <h2>Contact Us</h2>
         <div class="address contact-class">
           <div class="footer-icon">
@@ -56,16 +56,16 @@
 
         </div>
       </div>
-      <div class="maps">
+      <div class="maps flex33">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29479.687981302766!2d72.867059133189!3d22.54313373878595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e51787d6db2cd%3A0x47a18bb3828670be!2sGR%20Polynets!5e0!3m2!1sen!2sin!4v1704431940912!5m2!1sen!2sin"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
-    <div class="partition">
+    <!-- <div class="partition">
 
-    </div>
+    </div> -->
 
     <!-- <div class="powered-by"> Website Designed By : <a href="http://www.meghtechnologies.com" target="_blank"><img
           src="<? echo site_url('assets/images/logo_meghtechnologies.png');?>" alt="" loading="lazy" /></a>

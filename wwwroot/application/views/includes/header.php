@@ -41,7 +41,7 @@
                         </li>
                         
                         <li>
-                          <a class="dropdown-item" href="<? echo site_url('extruded/square');?>">Square</a></li>
+                          <a class="dropdown-item" href="<? echo site_url('extruted/sqaure');?>">Square</a></li>
 
                       </ul>
                     </li>

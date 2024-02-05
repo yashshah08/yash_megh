@@ -189,8 +189,8 @@ ul li {
 @media (max-width: 991px) {
   .mainHeader header .navbarLink ul li a {
     color: #fff;
-    font-size: 16px;
-    padding: 10px 12px 10px 12px;
+    font-size: 24px;
+    padding: 15px 12px 9px 12px;
   }
 }
 
@@ -849,7 +849,7 @@ margin: 10px;
 
 .specific-req{
     background-color: rgb(0, 0, 0);
-    height: auto;
+    /* height: auto; */
 }
 
 .specific-req h2{
@@ -859,6 +859,7 @@ margin: 10px;
     align-items: center;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 .requirement{
     margin: 0px;
@@ -875,12 +876,13 @@ margin: 10px;
 
 .footer-content{
     display: flex;
-    padding-top: 40px;
+    padding: 40px 0px;
     flex-wrap: wrap;
+    border-bottom: 3px solid #fff;
 }
 
 .quick-links{
-    width: 33%;
+    
     color: white;
     text-decoration: none; }
 
@@ -909,10 +911,11 @@ margin: 10px;
 }
 
 
-.contact-us{
+/* .contact-us{
     width: 33%;
-}
+} */
 
+.flex33{ flex: 0 0 33.33%; max-width: 33.33%;}
 .address.contact-class{
     display: flex;
     padding-bottom: 15px;
@@ -921,9 +924,9 @@ margin: 10px;
 .contact-numb, .email {display: flex;}
 .email{ padding-top: 15px; }
 
-.maps{
+/* .maps{
     width: 33%;
-}
+} */
 
 .contact-us h2{
     color: white;
@@ -960,12 +963,12 @@ iframe{
     width: 100%; height: 300px;
 }
 
-.partition{
+/* .partition{
     display: block;
     height: 0;
     border: 1px solid #ffffff;
     margin-top: 50px;
-}
+} */
 
 .powered-by h6{
     text-align: center;
@@ -1458,9 +1461,9 @@ iframe{
         width: 42%;
     } */
 
-    .our-products-image ul li img {
+    /* .our-products-image ul li img {
         padding-left: 6px;
-    }
+    } */
 
     #navbarSupportedContent {
         flex: 0 0 41%;
@@ -1474,12 +1477,17 @@ iframe{
     .our-products-image ul{
         padding-left: 0px;
     }
-    .quick-links{
-        width: 50%;
+    .footer-content{
+        padding: 40px 40px 0px;
+    }
+    .flex33{
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .maps{
-        width: 100%;
+        flex:0 0 100%;
+        max-width: 100%;
         padding-top: 30px;
     }
     .quick-links ul li {
@@ -1511,9 +1519,9 @@ iframe{
         width: 45%;
     }
 
-    .our-products-image ul li img {
+    /* .our-products-image ul li img {
         padding-left: 20px;
-    }
+    } */
     .info-box ul li h2 {
         padding-top: 12px;
     }
@@ -1611,7 +1619,8 @@ iframe{
         padding: auto;
     }
     .about-GR .about-text{
-        max-width: 100%;      
+        max-width: 100%; 
+        padding-bottom: 10px;     
     }
     .about-text p {padding-top: 0px;}
     .about-GR p {
@@ -1663,9 +1672,9 @@ iframe{
         padding-bottom: 5px;
     }
  
-    .partition {
+    /* .partition {
         margin-top: 20px;
-    }
+    } */
 
     .info-box ul li i {
         font-size: 60px;
@@ -1700,9 +1709,9 @@ iframe{
     .product ul li {
         width: 47%;
     }
-    .container {
+    /* .container {
         padding:10px 0px;
-    }
+    } */
     .products_content {
         margin-bottom: 25px;
     }
@@ -1782,6 +1791,9 @@ iframe{
     .banner {
         padding: 30px 0px;
     }
+    .about-GR .about-text {
+        padding-bottom: 35px;
+    }
     
     
 
@@ -1792,13 +1804,12 @@ iframe{
     .our-products-image ul li {
         padding-left: 0px;
     }
-    .info-box ul {
-        flex-wrap: wrap;
-    }
+
     .info-box ul li{
         flex: 0 0 50%;
         max-width: 50%;
-        margin: 20px 0px; 
+        margin:0px; 
+        padding: 35px
     }
     
     .info-box ul li i {
@@ -1812,6 +1823,7 @@ iframe{
     }
     .our-products-image ul li {
         width: 50%;
+        padding: 7px;
     }
     .specific-req h2 {
         font-size: 32px;
@@ -1827,14 +1839,14 @@ iframe{
     }
     
     .contact-us h2 {    
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     .footer-content.contact-us .email{padding-top: 0px;}
     .maps {
         padding-top: 40px;
     }
     .footer-content {
-        padding-top: 30px;
+        padding: 40px 0px 0px;
     }
     .product ul li {
         flex: 0 0 50%;
@@ -2009,7 +2021,7 @@ iframe{
 
     .about-GR p {
         margin-top: 15px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
         color: grey;
     }
@@ -2019,10 +2031,14 @@ iframe{
     }
     .about-GR button{
         margin-top: 5px;
-        padding: 5px 7px;
+        padding: 10px 15px;
+        font-size: 14px;
     }
     .about-text button a {
         font-size: 14px;
+    }
+    .about-GR .about-text {
+        padding-bottom: 0px;
     }
 
     .our-products {
@@ -2039,10 +2055,11 @@ iframe{
     .our-products-img-line-1 {
         margin-top: 10px;
     }
-
+    .our-products-text .section_title h2 {
+        margin-bottom: 20px;
+    }
     .specific-req {
         margin-top: 0px;
-        height: 70px;
     }
     .requirement {
         padding: 10px ;
@@ -2050,38 +2067,26 @@ iframe{
     .specific-req h2 {
         font-size: 20px;
         font-weight: bold;
-        text-align: center;
-    }
-
-    .about-img img {
-        width: 305px;
+        margin-bottom: 0px;
+        padding: 15px 0px;
         
     }
-
     .specific-req p{
         font-size: 16px;
     }
     .footer-content{
-        flex-wrap: wrap;
-        padding-top: 10px;
+        padding-top: 25px;
     }
-    .quick-links ul{
-        font-size: 14px;
-        line-height: 34px;
-        padding-left: 0px;
-        
+    .quick-links ul {
+        padding-top: 15px;
     }
-    .quick-links h2{
-        font-size: 24px;
-    }
+    
+
     .footer-content .contact-us{
         text-align: center;
         width: 100%;
     }
 
-    .footer-content .contact-us h2{
-        font-size: 30px;
-    }
     /* .contact-us-text {
         padding: 0px 0px;
     } */
@@ -2109,11 +2114,11 @@ iframe{
         justify-content: center;
     }
     .maps{
-        padding-top: 15px;
+        padding-top: 25px;
     }
-    .partition {
+    /* .partition {
         margin-top: 20px;
-    }
+    } */
 
     .info-box ul li h5 {
         font-size: 15px;
@@ -2123,9 +2128,6 @@ iframe{
     }
     .info-box ul li i {
         font-size: 60px;
-    }
-    .info-box ul li{
-        width: 50%;
     }
     .about-text {
         padding-top: 0px;
@@ -2141,34 +2143,38 @@ iframe{
         font-size: 12px;
     }
     .info-box ul li {
-        margin: 15px 0px;
+        padding: 30px;
     }
     .our-products-text p {
         font-size: 30px;
     }
     .our-products {
-        padding: 12px 0px;
+        padding: 20px 0px 10px;
     }
     .requirement b {
         font-size: 14px;
     }
     .quick-links {
-        width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
+    }
+    .flex33 {
+        flex: 0 0 100%;
+        max-width: 100%;
         text-align: center;
     }
-    /* .contact-us {
-        padding-left: 0px;
-    } */
-    /* .contact-us-text p {
-        width: 290px;
-    } */
-    .quick-links h2 {
-        font-size: 30px;
+    .flex33 iframe {
+        height: 250px;
     }
+    .flex33 h2{
+        font-size: 24px;
+    }
+
+    .contact-us-text {
+        padding: 0px 10px;
+    }
+
     .quick-links ul li{
         line-height: 20px;
-        padding-bottom: 0px;
     }
     .quick-links ul li a{
         font-size: 16px;
@@ -2188,11 +2194,12 @@ iframe{
         width: 100%;
     }
     .container {
-        padding:10px 30px;
+        padding:0px 15px;
     }
     
     .info-box ul li h5 {
         font-size: 14px;
+        margin-bottom: 0px;
     }
     .banner h2 {
         font-size: 25px;

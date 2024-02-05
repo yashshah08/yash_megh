@@ -20,10 +20,10 @@ class extruted extends Front_Controller
 		$this->load->vars($data);
 		$this->load->view('template/innermaster');
 	}
-	function square()
+	function sqaure()
 	{
-		$data['main'] = 'square';
-		$data['websitepagename'] = 'square';
+		$data['main'] = 'sqaure';
+		$data['websitepagename'] = 'sqaure';
 		$this->load->vars($data);
 		$this->load->view('template/innermaster');
 	}
