@@ -35,7 +35,7 @@ spl_autoload_register('classAutoLoader');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/grpolynets/wwwroot';
+$config['base_url'] = 'http://localhost:8080/grpolynets/wwwroot';
 
 /*
 |--------------------------------------------------------------------------
